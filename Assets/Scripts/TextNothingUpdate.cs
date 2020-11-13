@@ -30,5 +30,8 @@ Nothing";
         {
             _text.text = $"Nothing: {Mathf.RoundToInt(value*100)}%";
         }
+        Image img = GameObject.Find("PanelSettings").GetComponent<Image>();
+
+        img.color = new Color(img.color.r, img.color.g, img.color.b, value);
     }
 }
